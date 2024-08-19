@@ -1,0 +1,15 @@
+/* Stile per primo esercizio  */
+#esDadi span:first-child {
+    display: block;
+    margin-bottom: 2rem;
+}
+#pcNum {
+    margin-left: 2rem;
+}
+#result {
+    display: block;
+    margin-top: 2rem;
+}
+
+
+/* Stile per secondo esercizio */
