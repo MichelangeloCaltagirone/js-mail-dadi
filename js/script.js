@@ -30,5 +30,41 @@ result.innerText = winOrLose;
 // Secondo Esercizio: Finta Login
 
 
+//Setto le variabili note
+
+// Array contenente stringhe(email)
+const emails = ['ozzyosborne@gmail.com', 'tonyiommi@gmail.com', 'billward@gmail.com', 'gezzerebutler@gmail.com'];
+
+// Recupero dal DOM gli elementi che mi interessano
+const userFieldEmail = document.getElementById('userEmail');
+const buttonCheck = document.getElementById('buttonCheck');
+
+// Dove mostrerò il messaggio della verifica in pagina
+const verified = document.getElementById('verified');
+
+// Al click del bottone, recupero il valore dell'input dell'utente, giro tutta la lista e verifico la presenza o meno del valore inserito
+buttonCheck.addEventListener("click", function() {
+
+    const inputValue = userFieldEmail.value; // recupero il valore dell'utente
+
+    let checked = '';  // preparo variabile per verifica 
+
+    for (let i = 0; i < emails.length; i++ ) {
+        if (emails[i] === inputValue) checked = 'Sei stato verificato. Email corretta'; 
+    }   
+
+    if (!checked) verified.innerText = 'Email non valida. Riprovare';
+    else verified.innerText = checked;
+});
+
+
+
+
+
+
+ 
+
+
+
 
 

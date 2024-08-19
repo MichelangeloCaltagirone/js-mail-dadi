@@ -1,4 +1,5 @@
 /* Stile per primo esercizio  */
+
 #esDadi span:first-child {
     display: block;
     margin-bottom: 2rem;
@@ -13,3 +14,16 @@
 
 
 /* Stile per secondo esercizio */
+
+#fakeLogin {
+    margin-top: 4rem;
+    text-align: center;
+}
+#verified {
+    display: block;
+    font-size: large;
+    margin-top: 1rem;
+}
+#secretlist {
+    text-align: left;
+}
